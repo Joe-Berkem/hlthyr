@@ -4,11 +4,11 @@ import App from './components/App/App';
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import initial from "./data/initial";
-// import reducers from "./data/reducers";
+import reducers from "./data/reducers";
 
 
 const store = createStore(
-    // reducers,
+    reducers,
     initial,
     window.__REDUX_DEVTOOLS_EXTENSION__
       && window.__REDUX_DEVTOOLS_EXTENSION__(),

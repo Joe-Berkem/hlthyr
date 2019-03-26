@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/css/';
+import '../../styles/css/main.css/main.css';
 
 const ScheduleScreen = () => (
         <h3>
