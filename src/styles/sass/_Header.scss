@@ -1,0 +1,18 @@
+
+.headerContainer {
+	background-image:
+		linear-gradient(
+			#EBEBE5, #9AB1AE
+    	);
+   //  will be "on top", if browser supports it 
+   // background-image: linear-gradient(red, orange);
+   text-align: center;
+}
+
+
+.headerLogo {
+	font-family: sans-serif;
+	color: #1F2422;
+  	font-weight: bold;
+  	padding: 50px 30px;
+}

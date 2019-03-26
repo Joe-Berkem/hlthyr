@@ -4,13 +4,13 @@ import '../../styles/css/main.css/main.css';
 
 const NavBar = () => (
 
-    <ul>
+    <ul className="navbarContainer">
 
-		<li><a href="#">Schedule</a></li>
-		<li><a href="#">My Meds</a></li>
-		<li><a href="#">Stash ??</a></li>
-		<li><a href="#">Calendar</a></li>
-		<li><a href="#">Planner</a></li>
+		<li className="navbarItem">Schedule</li>
+		<li className="navbarItem"><a href="#">My Meds</a></li>
+		<li className="navbarItem"><a href="#">Stash ??</a></li>
+		<li className="navbarItem"><a href="#">Calendar</a></li>
+		<li className="navbarItem"><a href="#">Planner</a></li>
 
     </ul>
  

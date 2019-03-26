@@ -1,3 +1,25 @@
-/*ScheduleScreen styling*/
-.ScheduleScreen {
-  background-color: red; }
+.headerContainer {
+  background-image: linear-gradient(#EBEBE5, #9AB1AE);
+  text-align: center; }
+
+.headerLogo {
+  font-family: sans-serif;
+  color: #1F2422;
+  font-weight: bold;
+  padding: 50px 30px; }
+
+.navbarContainer {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: block; }
+
+.navbarItem {
+  display: inline;
+  text-align: center;
+  font-family: sans-serif;
+  color: #EBEBE5;
+  background-color: #72586D;
+  padding: 20px 20px;
+  float: left;
+  width: auto; }
