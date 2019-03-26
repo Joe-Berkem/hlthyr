@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://pete-latham.github.io/hlthyr/",
   "dependencies": {
+    "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2",
@@ -12,7 +13,8 @@
     "react-redux": "^6.0.1",
     "react-router": "^5.0.0",
     "react-scripts": "2.1.8",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
