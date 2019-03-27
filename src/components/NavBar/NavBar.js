@@ -16,7 +16,6 @@ const NavBar = () => (
 			<li className="navbarItem">
 				<Link to='/myMeds'>Stock</Link>
 			</li>
-		
     </ul>
  
 );

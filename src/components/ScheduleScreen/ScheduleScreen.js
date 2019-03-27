@@ -9,7 +9,5 @@ const ScheduleScreen = () => (
                 </h3>
                 <DailyDoses/>
         </>
-
- 
 );
 export default ScheduleScreen;
