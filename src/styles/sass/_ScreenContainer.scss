@@ -1,0 +1,17 @@
+/*ScheduleScreen styling*/
+
+.screenContainer {
+	background-color: #5B52A140; //add transparency 37% aprox
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	border-radius: 25px;
+	font-family: sans-serif;
+	text-align: center;
+	min-height: 50vh;
+	color: #EBEBE5;
+
+
+
+}

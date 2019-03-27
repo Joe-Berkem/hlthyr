@@ -1,5 +1,14 @@
 // all the sass files will be imported HERE
 
-@import '_ScheduleScreen';
+@import '_MainContainer'; //defines grid
+
+@import '_Header';
+
+@import '_NavBar';
+
+@import '_ScreenContainer'; //contains pages' content
+
+@import '_SidebarContainer'; //contains calendar, reminder and notes
+
 
 

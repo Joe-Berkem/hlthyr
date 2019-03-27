@@ -1,0 +1,26 @@
+
+.headerContainer {
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	background-color: #63599E;
+	// background-image:
+	// 	linear-gradient(
+	// 		#EBEBE5, #9AB1AE
+ //    	);
+   text-align: center;
+}
+
+
+.headerLogo {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	font-family: sans-serif;
+	color: #EBEBE5;
+  	font-weight: bold;
+  	padding: 50px 30px;
+  	margin: 0px;
+}
