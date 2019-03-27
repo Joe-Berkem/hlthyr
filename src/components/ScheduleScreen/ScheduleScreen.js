@@ -5,7 +5,7 @@ import DailyDoses from '../DailyDoses/';
 const ScheduleScreen = () => (
         <>
                 <h3>
-                Schedule
+                        Schedule
                 </h3>
                 <DailyDoses/>
         </>

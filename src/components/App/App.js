@@ -5,7 +5,7 @@ import ScheduleScreen from '../ScheduleScreen/ScheduleScreen';
 import NavBar from '../NavBar/NavBar.js';
 import MyMedsScreen from '../MyMedsScreen/MyMedsScreen.js';
 import StashScreen from '../StashScreen/StashScreen.js';
-import Sidebar from '../Sidebar/Sidebar.js';
+import Sidebar from '../SideBar/Sidebar.js';
 
 
 
