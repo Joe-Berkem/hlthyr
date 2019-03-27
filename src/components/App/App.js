@@ -4,6 +4,7 @@ import Header from '../Header/Header.js';
 import ScheduleScreen from '../ScheduleScreen/ScheduleScreen';
 import NavBar from '../NavBar/NavBar.js';
 
+
 import {
   BrowserRouter as Router,
   Route,
@@ -15,7 +16,6 @@ const App = () => (
   <Router>
     <Header/>
     <NavBar/>
-
     
     <div className="screenContainer">
       <Switch>
@@ -24,7 +24,7 @@ const App = () => (
     </div>
 
     <div className="sidebarContainer"></div>
-    
+  
   </Router>
 );
 

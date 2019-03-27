@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import initial from "./data/initial";
 import reducers from "./data/reducers";
 
-
+console.log(initial);
 const store = createStore(
     reducers,
     initial,
