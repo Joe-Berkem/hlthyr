@@ -8,9 +8,7 @@ const NavBar = () => (
 
 		<li className="navbarItem">Schedule</li>
 		<li className="navbarItem">My Meds</li>
-		<li className="navbarItem">Stash ??</li>
-		<li className="navbarItem">Calendar</li>
-		<li className="navbarItem">Planner</li>
+		<li className="navbarItem">Stock</li>
 
     </ul>
  

@@ -2,9 +2,9 @@ import React from 'react';
 import '../../styles/css/main.css/main.css';
 
 const ScheduleScreen = () => (
-        <h3>
+        <h2>
         Schedule Screen
-        </h3>
+        </h2>
  
 );
 export default ScheduleScreen;

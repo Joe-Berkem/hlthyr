@@ -3,7 +3,7 @@ import '../../styles/css/main.css/main.css';
 import Header from '../Header/Header.js';
 import ScheduleScreen from '../ScheduleScreen/ScheduleScreen';
 import NavBar from '../NavBar/NavBar.js';
-import Sidebar from './Sidebar/Sidebar';
+import Sidebar from '../Sidebar/Sidebar.js';
 
 import {
   BrowserRouter as Router,
@@ -24,7 +24,7 @@ const App = () => (
       </Switch>
     </div>
 
-    <Sidebar />
+    <Sidebar/>
 
 
     
