@@ -5,12 +5,12 @@ const DoseCard = ({time, medName, medColour, dose, unit }) => (
 
     <div style={styles.container}>
         <div style={ styles.column }>
-            <p style={styles.text}>{time}11:00am</p>
+            <p style={styles.text}>{time}</p>
         </div>
 
         <div style={ {...styles.column, backgroundColour: medColour} }>
-            <p style={styles.text}>{medName}Paracetamol</p>
-            <p style={styles.text}>{dose} 200mg x 2{unit}</p>
+            <p style={styles.text}>{medName}</p>
+            <p style={styles.text}>{dose} x {unit}</p>
         </div>
 
         <div style={styles.column}>
@@ -32,6 +32,7 @@ const styles = {
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         alignItems: 'center',
+        margin: '1em',
 
     },
     column: {
@@ -43,6 +44,7 @@ const styles = {
         alignItems: 'center',
         backgroundColor: 'white',
         margin: '1em 0',
+        minHeight: '3em',
     },
     text: {
         margin: '0',

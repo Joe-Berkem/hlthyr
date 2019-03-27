@@ -24,36 +24,42 @@ const initial = {
 
     "doses": {
         "1": {
+            "id": "1",
             "time": "08:00",
             "dose": "2",
             "unit": "500mg tablet",
             "med_id": 1
         },
         "2": {
+            "id": "2",
             "time": "12:00",
             "dose": "2",
             "unit": "500mg tablet",
             "med_id": 1
         },
         "3": {
+            "id": "3",
             "time": "16:00",
             "dose": "2",
             "unit": "500mg tablet",
             "med_id": 1
         },
         "4": {
+            "id": "4",
             "time": "20:00",
             "dose": "2",
             "unit": "500mg tablet",
             "med_id": 1
         },
         "5": {
+            "id": "5",
             "time": "08:00",
             "dose": "2",
             "unit": "200mg tablet",
             "med_id": 2
         },
         "6": {
+            "id": "6",
             "time": "16:00",
             "dose": "2",
             "unit": "200mg tablet",
