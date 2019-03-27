@@ -3,8 +3,13 @@
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
-	display: block;
-
+	display: inline-flex;
+	justify-content: space-evenly;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-color: #5B52A1;
 }
 
 .navbarItem {
@@ -12,9 +17,6 @@
 	text-align: center;
 	font-family: sans-serif;
 	color: #EBEBE5;
-	background-color: #72586D;
 	padding: 20px 20px;
 	float: left;
-	width: auto;
-
 }

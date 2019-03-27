@@ -7,10 +7,10 @@ const NavBar = () => (
     <ul className="navbarContainer">
 
 		<li className="navbarItem">Schedule</li>
-		<li className="navbarItem"><a href="#">My Meds</a></li>
-		<li className="navbarItem"><a href="#">Stash ??</a></li>
-		<li className="navbarItem"><a href="#">Calendar</a></li>
-		<li className="navbarItem"><a href="#">Planner</a></li>
+		<li className="navbarItem">My Meds</li>
+		<li className="navbarItem">Stash ??</li>
+		<li className="navbarItem">Calendar</li>
+		<li className="navbarItem">Planner</li>
 
     </ul>
  

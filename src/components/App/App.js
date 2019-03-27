@@ -16,11 +16,14 @@ const App = () => (
     <Header/>
     <NavBar/>
 
-    <h1> hello </h1>
+    
+    <div className="screenContainer">
+      <Switch>
+        <Route exact path="/" component={ ScheduleScreen }/>
+      </Switch>
+    </div>
 
-    <Switch>
-      <Route exact path="/" component={ ScheduleScreen }/>
-    </Switch>
+    <div className="sidebarContainer"></div>
     
   </Router>
 );

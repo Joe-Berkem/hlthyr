@@ -1,25 +1,67 @@
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, auto);
+  background-color: #D9D9D9; }
+
 .headerContainer {
-  background-image: linear-gradient(#EBEBE5, #9AB1AE);
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #63599E;
   text-align: center; }
 
 .headerLogo {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
   font-family: sans-serif;
-  color: #1F2422;
+  color: #EBEBE5;
   font-weight: bold;
-  padding: 50px 30px; }
+  padding: 50px 30px;
+  margin: 0px; }
 
 .navbarContainer {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
-  display: block; }
+  display: inline-flex;
+  justify-content: space-evenly;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: #5B52A1; }
 
 .navbarItem {
   display: inline;
   text-align: center;
   font-family: sans-serif;
   color: #EBEBE5;
-  background-color: #72586D;
   padding: 20px 20px;
-  float: left;
-  width: auto; }
+  float: left; }
+
+/*ScheduleScreen styling*/
+.screenContainer {
+  background-color: #5B52A140;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  border-radius: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  min-height: 50vh;
+  color: #EBEBE5; }
+
+.sidebarContainer {
+  background-color: silver;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  border-radius: 25px;
+  font-family: sans-serif;
+  text-align: center; }
