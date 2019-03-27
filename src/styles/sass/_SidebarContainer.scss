@@ -1,12 +1,16 @@
 
 .sidebarContainer {
-	background-color: silver; //temporary
+	// background-color: silver; //temporary
 	grid-column-start: 4;
 	grid-column-end: 6;
 	grid-row-start: 3;
-	grid-row-end: 5;
+	// grid-row-end: 5;
 	border-radius: 25px;
 	font-family: sans-serif;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	border-top: 1em;
 
 }
+

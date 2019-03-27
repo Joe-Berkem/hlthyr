@@ -24,8 +24,8 @@ export default DailyDoses;
 
 const styles = {
     container: {
+        marginTop: '1em',
         width: '100%',
-        backgroundColor: 'white',
         borderRadius: '8px',
         display: 'flex',
         flexDirection: 'column',

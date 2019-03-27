@@ -57,14 +57,42 @@ a {
   font-family: sans-serif;
   text-align: center;
   min-height: 50vh;
-  color: #EBEBE5; }
+  margin-top: 1em; }
+  .screenContainer h3 {
+    color: white; }
+  .screenContainer p {
+    color: black;
+    font-size: 11px; }
 
 .sidebarContainer {
-  background-color: silver;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 3;
+  border-radius: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-top: 1em; }
+
+.calendarCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red; }
+
+.react-calendar {
+  margin-top: 1em; }
+
+.remindersContainer {
+  background-color: green;
+  height: 60px;
+  width: 25px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
   grid-row-end: 5;
   border-radius: 25px;
   font-family: sans-serif;
-  text-align: center; }
+  text-align: center;
+  margin: 10px 25px; }
