@@ -3,6 +3,7 @@ import '../../styles/css/main.css/main.css';
 import Header from '../Header/Header.js';
 import ScheduleScreen from '../ScheduleScreen/ScheduleScreen';
 import NavBar from '../NavBar/NavBar.js';
+import DoseCard from '../DoseCard/DoseCard.js';
 
 import {
   BrowserRouter as Router,
@@ -15,8 +16,9 @@ const App = () => (
   <Router>
     <Header/>
     <NavBar/>
+    <DoseCard />
 
-    <h1> hello </h1>
+
 
     <Switch>
       <Route exact path="/" component={ ScheduleScreen }/>
