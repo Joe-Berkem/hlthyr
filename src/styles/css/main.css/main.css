@@ -40,8 +40,11 @@
   text-align: center;
   font-family: sans-serif;
   color: #EBEBE5;
-  padding: 20px 20px;
-  float: left; }
+  padding: 20px 20px; }
+
+a {
+  color: white;
+  text-decoration: none; }
 
 /*ScheduleScreen styling*/
 .screenContainer {

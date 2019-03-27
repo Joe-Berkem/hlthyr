@@ -3,7 +3,8 @@ import '../../styles/css/main.css/main.css';
 import Header from '../Header/Header.js';
 import ScheduleScreen from '../ScheduleScreen/ScheduleScreen';
 import NavBar from '../NavBar/NavBar.js';
-
+import MyMedsScreen from '../MyMedsScreen/MyMedsScreen.js';
+import StashScreen from '../StashScreen/StashScreen.js';
 
 import {
   BrowserRouter as Router,
@@ -17,13 +18,11 @@ const App = () => (
     <Header/>
     <NavBar/>
     
-    <div className="screenContainer">
       <Switch>
         <Route exact path="/" component={ ScheduleScreen }/>
-      </Switch>
-    </div>
-
-    <div className="sidebarContainer"></div>
+        <Route exact path="/my-meds" component={ MyMedsScreen }/>
+        <Route exact path="/stock" component={ StashScreen }/>
+      </Switch> 
   
   </Router>
 );
