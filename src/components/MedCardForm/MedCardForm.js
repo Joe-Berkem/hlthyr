@@ -52,16 +52,16 @@ class MedCardForm extends Component {
                     onChange={this.handleChangeMedName}
                 >
                     <option>Choose from ...</option>
-                    <option value="1">Paracetomol</option>
-                    <option value="2">Ibuprofen</option>
-                    <option value="3">Warfarin</option>
-                    <option value="4">Asperin</option>
-                    <option value="5">Codeine</option>
-                    <option value="6">Amoxicillin</option>
-                    <option value="7">Diazepan</option>
-                    <option value="8">Zopiclone</option>
-                    <option value="9">Nitrofurantoin</option>
-                    <option value="10">Pravastatin</option>
+                    <option value="Paracetomol">Paracetomol</option>
+                    <option value="Ibuprofen">Ibuprofen</option>
+                    <option value="Warfarin">Warfarin</option>
+                    <option value="Asperin">Asperin</option>
+                    <option value="Codeine">Codeine</option>
+                    <option value="Amoxicillin">Amoxicillin</option>
+                    <option value="Diazepan">Diazepan</option>
+                    <option value="Zopiclone">Zopiclone</option>
+                    <option value="Nitrofurantoin">Nitrofurantoin</option>
+                    <option value="Pravastatin">Pravastatin</option>
                 </select>
             </div>
             
@@ -85,12 +85,16 @@ class MedCardForm extends Component {
 
             <div style={styles.column}>
                 <label style={styles.text}>Unit</label>
-                <input
-                style={styles.input}
-                onChange={ this.handleChangeUnit }
-                type="number"
-                />
+                <select 
+                    style={styles.select}
+                    onChange={this.handleChangeUnit}
+                >
+                    <option>Choose from ...</option>
+                    <option value="500mg tablet">500mg tablet</option>
+                    <option value="200mg tablet">200mg tablet</option>
+                </select>
             </div>
+
             <button>Add</button>
           </div>
           
