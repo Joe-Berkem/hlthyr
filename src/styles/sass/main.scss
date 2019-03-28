@@ -1,4 +1,3 @@
-// all the sass files will be imported HERE
 
 @import '_MainContainer'; //defines grid
 
@@ -10,9 +9,15 @@
 
 @import '_SidebarContainer'; //contains calendar, reminder and notes
 
-@import '_Calendar';  // contains styling for Calendar component
+@import '_Calendar';  //contains styling for Calendar component
 
 @import '_RemindersContainer'; //contains only the reminder box
+
+@import '_HomeButton'; //contains styling and positioning for home button
+
+@import '_LogOutButton'; //contains styling and positioning for log out button
+
+@import '_SettingGearsButton'; //contains styling and positioning for home button
 
 
 
