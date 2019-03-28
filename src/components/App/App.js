@@ -7,8 +7,6 @@ import MyMedsScreen from '../MyMedsScreen/MyMedsScreen.js';
 import StashScreen from '../StashScreen/StashScreen.js';
 import Sidebar from '../SideBar/Sidebar.js';
 
-
-
 import {
   BrowserRouter as Router,
   Route,
