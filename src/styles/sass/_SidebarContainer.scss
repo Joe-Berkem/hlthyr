@@ -1,16 +1,52 @@
 
 .sidebarContainer {
-	// background-color: silver; //temporary
+	background-color: #EBEBE5;
 	grid-column-start: 4;
 	grid-column-end: 6;
 	grid-row-start: 3;
-	// grid-row-end: 5;
+	grid-row-end: 4;
 	border-radius: 25px;
-	// font-family: sans-serif;
 	text-align: center;
-	display: flex;
-	justify-content: center;
+	// display: flex;
+	// justify-content: center;
 	border-top: 1em;
+	min-height: 50vh;
+	margin: 1em 1em 1em 0em;
+	color: #696969; //dimgrey colour for container header txt
+}
+
+
+.infoHeader {
+	margin: 0px auto;
+	width: 90%;
+	background-color: #5271FF;
+	border-radius: 8px;
+}
+
+.infoHeaderText {
+	color: #EBEBE5;
+	font-weight: bold;
+	letter-spacing: 0.04em;
+	font-size: 1.3em;
+	text-align: left;
+	padding: 4%;
+	margin: 0px;
+}
+
+.infoContainer {
+	width: 80%;
+	margin: 0px auto;
 
 }
+
+.infoContainerText {
+	color: #696969; //dimgrey colour for sidebar info txt
+	font-size: 0.87em;
+	text-align: left;
+	padding: auto;
+}
+
+
+
+
 

@@ -49,7 +49,6 @@ a {
   color: #EBEBE5;
   text-decoration: none; }
 
-/*ScheduleScreen styling*/
 .screenContainer {
   background-color: #5B52A140;
   grid-column-start: 1;
@@ -59,22 +58,50 @@ a {
   border-radius: 25px;
   text-align: center;
   min-height: 50vh;
-  margin-top: 1em; }
+  margin: 1em; }
   .screenContainer h3 {
-    color: white; }
+    color: #EBEBE5; }
   .screenContainer p {
     color: black;
     font-size: 11px; }
 
 .sidebarContainer {
+  background-color: #EBEBE5;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 3;
+  grid-row-end: 4;
   border-radius: 25px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  border-top: 1em; }
+  border-top: 1em;
+  min-height: 50vh;
+  margin: 1em 1em 1em 0em;
+  color: #696969; }
+
+.infoHeader {
+  margin: 0px auto;
+  width: 90%;
+  background-color: #5271FF;
+  border-radius: 8px; }
+
+.infoHeaderText {
+  color: #EBEBE5;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  font-size: 1.3em;
+  text-align: left;
+  padding: 4%;
+  margin: 0px; }
+
+.infoContainer {
+  width: 80%;
+  margin: 0px auto; }
+
+.infoContainerText {
+  color: #696969;
+  font-size: 0.87em;
+  text-align: left;
+  padding: auto; }
 
 .calendarCircle {
   width: 10px;
