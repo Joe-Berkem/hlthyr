@@ -47,7 +47,7 @@ class MedCardForm extends Component {
         <form onSubmit={ this.handleSubmit }>
           <div style={styles.container}>
             <div style={styles.column}>
-                <label style={styles.text}>Medication Type</label>
+                <label style={styles.text}>Med Type</label>
                 <select 
                     style={styles.select}
                     onChange={this.handleChangeMedName}
@@ -78,7 +78,7 @@ class MedCardForm extends Component {
             </div>
 
             <div style={styles.column}>
-                <label style={styles.text}>Dosage per day</label>
+                <label style={styles.text}>Dosage</label>
                 <input
                 style={styles.input}
                 onChange={ this.handleChangeDose }
@@ -99,7 +99,7 @@ class MedCardForm extends Component {
                 </select>
             </div>
 
-            <button>Add</button>
+            <button style={styles.button}>Add</button>
           </div>
           
         </form>
@@ -133,15 +133,24 @@ const styles = {
     minHeight: '3em',
   },
   text: {
-    margin: '0',
-    fontSize: '10px',
+    margin: '1em',
+    fontSize: '12px',
   },
   input: {
     width: '70%',
-    fontSize: '10px',
+    fontSize: '12px',
+    marginBottom: '1em',
   },
   select: {
-    fontSize: '10px', 
+    fontSize: '12px', 
     width: '80%',
+    marginBottom: '1em',
   },
+  button: {
+    backgroundColor: '#857eb1',
+    borderRadius: '8px',
+    color: 'white',
+    border: 'none',
+    padding: '0.5em',
+  }
 };
