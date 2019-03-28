@@ -9,11 +9,10 @@ const showMedInfo = true;
 
 const Sidebar = () => (
   <aside className='sidebarContainer'>
-    // Is the showMedInfo flag 'true'?
     {showMedInfo ? (
       // If so, show the MedInfo component, passing through
       // the id of the respective medecine as props.
-      <MedInfo med_id={2} />
+      <MedInfo med_id={1} />
     ) : (
       // Otherwise show the calendar component
       <Calendar
