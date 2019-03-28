@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { capitalise } from '../../utils';
 
 // Get the appropriate data from the store and pass down into the MedInfo component
 const mapStateToProps = ({ meds }, { med_id }) => ({
@@ -11,7 +12,7 @@ const mapStateToProps = ({ meds }, { med_id }) => ({
 const MedInfo = ({ med }) => (
   <section>
     <h3 style={styles.infoBannerText}>Medicine Info</h3>
-    <p style={styles.infoHeader}>{med.name}:</p>
+    <p style={styles.infoHeader}>{capitalise(med.name)}:</p>
     <p style={styles.infoText}>{med.desc}</p>
     <p style={styles.infoHeader}>Dangers:</p>
     <p style={styles.infoText}>{med.warnings}</p>
