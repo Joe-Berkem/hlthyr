@@ -11,10 +11,10 @@ const NavBar = () => (
 				<Link to='/'>Schedule</Link>
 			</li>
 			<li className="navbarItem">
-				<Link to='/myMeds'>My Meds</Link>
+				<Link to='/my-meds'>My Meds</Link>
 			</li>
 			<li className="navbarItem">
-				<Link to='/myMeds'>Stock</Link>
+				<Link to='/stock'>Stock</Link>
 			</li>
     </ul>
  

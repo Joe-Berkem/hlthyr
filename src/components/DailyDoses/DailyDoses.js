@@ -7,14 +7,14 @@ const DailyDoses = ({ doses }) => (
         <div style={styles.dateBanner}>
             <h3 style={styles.dateBannerText}>Today</h3>
         </div>
-        {doses.map(dose => 
+        {doses.sort((a, b) => a.time.split(":")[0]-b.time.split(":")[0] ).map(dose => 
         <DoseCard
             time={dose.time}
             medName={dose.medName} 
             medColour={dose.medColour} 
             dose={dose.dose}
             unit={dose.unit}
-        /> ) 
+        /> )
         }
 
     </section>
