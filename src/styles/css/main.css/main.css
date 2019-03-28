@@ -1,3 +1,6 @@
+body {
+  margin: 0; }
+
 .mainContainer {
   display: grid;
   grid-template-columns: repeat(5, 20%);
@@ -59,7 +62,8 @@ a {
   border-radius: 25px;
   text-align: center;
   min-height: 50vh;
-  margin-top: 1em; }
+  margin-top: 1em;
+  margin-left: 1em; }
   .screenContainer h3 {
     color: white; }
   .screenContainer p {

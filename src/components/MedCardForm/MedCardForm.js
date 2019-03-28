@@ -111,7 +111,7 @@ export default MedCardForm;
 
 const styles = {
   container: {
-    width: '80%',
+    width: '95%',
     backgroundColor: '#d9d9d9',
     borderRadius: '8px',
     display: 'flex',
