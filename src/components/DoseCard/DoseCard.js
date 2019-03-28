@@ -1,5 +1,6 @@
 import React from 'react';
 
+const capitalise = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
 const DoseCard = ({time, medName, medColour, dose, unit }) => (
 
@@ -8,8 +9,8 @@ const DoseCard = ({time, medName, medColour, dose, unit }) => (
             <p style={styles.text}>{time}</p>
         </div>
 
-        <div style={ {...styles.column, backgroundColour: medColour} }>
-            <p style={styles.text}>{medName}</p>
+        <div style={styles.column} >
+            <p style={styles.text}>{capitalise(medName)}</p>
             <p style={styles.text}>{dose} x {unit}</p>
         </div>
 
@@ -18,8 +19,8 @@ const DoseCard = ({time, medName, medColour, dose, unit }) => (
             <input type="checkbox"></input>
         </div>
     </div>
-
 )
+
 
 export default DoseCard;
 
@@ -41,6 +42,7 @@ const styles = {
         height: '50%',
         borderRadius: '8px',
         flexDirection: 'column',
+        justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'white',
         margin: '1em 0',
