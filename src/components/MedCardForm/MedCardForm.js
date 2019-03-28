@@ -5,10 +5,10 @@ class MedCardForm extends Component {
       super(props);
   
       this.state = {
-          medName: "",
-          stock: 0,
-          dose: 0,
-          unit: 0, 
+          medName: this.props.medName,
+          stock: this.props.stock,
+          dose: this.props.dose,
+          unit: this.props.unit,
       };
   
       this.handleChangeMedName = this.handleChangeMedName.bind(this);
@@ -37,7 +37,7 @@ class MedCardForm extends Component {
   
     handleSubmit(e) {
       e.preventDefault();
-    //   this.props.submitMed(this.state);
+      this.props.submitMed(this.state);
     }
   
     render() {
@@ -55,15 +55,15 @@ class MedCardForm extends Component {
                     <option>Choose from ...</option>
                     <option selected={ medName === "Paracetomol" ? "selected" : ""}
                     value="Paracetomol">Paracetomol</option>
-                    <option value="Ibuprofen">Ibuprofen</option>
-                    <option value="Warfarin">Warfarin</option>
-                    <option value="Asperin">Asperin</option>
-                    <option value="Codeine">Codeine</option>
-                    <option value="Amoxicillin">Amoxicillin</option>
-                    <option value="Diazepan">Diazepan</option>
-                    <option value="Zopiclone">Zopiclone</option>
-                    <option value="Nitrofurantoin">Nitrofurantoin</option>
-                    <option value="Pravastatin">Pravastatin</option>
+                    <option selected={ medName === "Ibuprofen" ? "selected" : ""} value="Ibuprofen">Ibuprofen</option>
+                    <option selected={ medName === "Warfarin" ? "selected" : ""} value="Warfarin">Warfarin</option>
+                    <option selected={ medName === "Asperin" ? "selected" : ""} value="Asperin">Asperin</option>
+                    <option selected={ medName === "Codeine" ? "selected" : ""} value="Codeine">Codeine</option>
+                    <option selected={ medName === "Amoxicillin" ? "selected" : ""} value="Amoxicillin">Amoxicillin</option>
+                    <option selected={ medName === "Diazepan" ? "selected" : ""} value="Diazepan">Diazepan</option>
+                    <option selected={ medName === "Zopiclone" ? "selected" : ""} value="Zopiclone">Zopiclone</option>
+                    <option selected={ medName === "Nitrofurantoin" ? "selected" : ""} value="Nitrofurantoin">Nitrofurantoin</option>
+                    <option selected={ medName === "Pravastatin" ? "selected" : ""}value="Pravastatin">Pravastatin</option>
                 </select>
             </div>
             
@@ -73,6 +73,7 @@ class MedCardForm extends Component {
                 style={styles.input}
                 onChange={ this.handleChangeStock }
                 type="number"
+                value={stock}
                 />
             </div>
 
@@ -82,6 +83,7 @@ class MedCardForm extends Component {
                 style={styles.input}
                 onChange={ this.handleChangeDose }
                 type="number"
+                value={dose}
                 />
             </div>
 
@@ -92,8 +94,8 @@ class MedCardForm extends Component {
                     onChange={this.handleChangeUnit}
                 >
                     <option>Choose from ...</option>
-                    <option value="500mg tablet">500mg tablet</option>
-                    <option value="200mg tablet">200mg tablet</option>
+                    <option selected={ unit === "500mg tablet" ? "selected" : ""} value="500mg tablet">500mg tablet</option>
+                    <option selected={ unit === "200mg tablet" ? "selected" : ""} value="200mg tablet">200mg tablet</option>
                 </select>
             </div>
 

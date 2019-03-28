@@ -66,7 +66,12 @@ const initial = {
             "med_id": 2
         }
        
-    }           
+    },
+
+    "userMeds": [
+        []
+    ]
+
 
 }
     
