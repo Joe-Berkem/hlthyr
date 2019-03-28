@@ -41,6 +41,7 @@ class MedCardForm extends Component {
     }
   
     render() {
+        let {medName, stock, unit, dose} = this.state;
   
       return (
         <form onSubmit={ this.handleSubmit }>
@@ -52,7 +53,8 @@ class MedCardForm extends Component {
                     onChange={this.handleChangeMedName}
                 >
                     <option>Choose from ...</option>
-                    <option value="Paracetomol">Paracetomol</option>
+                    <option selected={ medName === "Paracetomol" ? "selected" : ""}
+                    value="Paracetomol">Paracetomol</option>
                     <option value="Ibuprofen">Ibuprofen</option>
                     <option value="Warfarin">Warfarin</option>
                     <option value="Asperin">Asperin</option>
