@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(5, auto);
-  background-color: #D9D9D9; }
+  background-color: #D9D9D9;
+  font-family: 'Oxygen', sans-serif; }
 
 .headerContainer {
   grid-column-start: 1;
@@ -17,9 +18,10 @@
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  font-family: sans-serif;
+  font-family: 'Rancho', cursive;
+  font-size: 3.2em;
+  letter-spacing: 0.07em;
   color: #EBEBE5;
-  font-weight: bold;
   padding: 50px 30px;
   margin: 0px; }
 
@@ -38,12 +40,13 @@
 .navbarItem {
   display: inline;
   text-align: center;
-  font-family: sans-serif;
   color: #EBEBE5;
-  padding: 20px 20px; }
+  padding: 20px 20px;
+  font-size: 1.2em;
+  letter-spacing: 0.05em; }
 
 a {
-  color: white;
+  color: #EBEBE5;
   text-decoration: none; }
 
 /*ScheduleScreen styling*/
@@ -54,7 +57,6 @@ a {
   grid-row-start: 3;
   grid-row-end: 5;
   border-radius: 25px;
-  font-family: sans-serif;
   text-align: center;
   min-height: 50vh;
   margin-top: 1em; }
@@ -69,7 +71,6 @@ a {
   grid-column-end: 6;
   grid-row-start: 3;
   border-radius: 25px;
-  font-family: sans-serif;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -93,7 +94,6 @@ a {
   grid-row-start: 4;
   grid-row-end: 5;
   border-radius: 25px;
-  font-family: sans-serif;
   text-align: center;
   margin: 10px 25px; }
 
@@ -120,7 +120,8 @@ a {
   border-radius: 6px;
   border: 0px;
   color: #EBEBE5;
-  font-size: 1em; }
+  font-size: 1.2em;
+  letter-spacing: 0.05em; }
 
 .settingGearsButton {
   grid-column-start: 4;
