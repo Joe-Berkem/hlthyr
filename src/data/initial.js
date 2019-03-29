@@ -1,4 +1,7 @@
 const initial = {
+  app: {
+    medInfoItem: '1',
+  },
   user: {
     id: '1',
     name: 'Dorothy',
@@ -22,58 +25,65 @@ const initial = {
       stock: 34,
       medColour: '#fff',
     },
+    '3': {
+      name: 'warfarin',
+      desc:
+        "Warfarin is a type of medicine known as an anticoagulant - or blood thinner. It makes your blood flow through your veins more easily. This means your blood will be less likely to make a dangerous blood clot. Warfarin is used to treat people who have had a previous blood clot such as: a blood clot in the leg - a deep vein thrombosis (DVT). A blood clot in the lungs - a pulmonary embolism. It’s also used to prevent blood clots if you’re at high risk of having them in the future. This includes people with: A replacement or mechanical heart valve, an abnormal heartbeat (known as atrial fibrillation), blood clotting disorder,such as thrombophilia or a higher chance of having a blood clot after an operation. Warfarin is only available on prescription. It comes as tablets and as a liquid that you swallow. is a painkiller available over the counter without a prescription. It's one of a group of painkillers called non-steroidal anti-inflammatory drugs (NSAIDs) and can be used to: ease mild to moderate pain – such as toothache, migraine and period pain. Control a high temperature (fever) – for example, when someone has the flu (influenza). Ease pain and inflammation (redness and swelling) caused by conditions that affect the joints, bones and muscles – such as rheumatoid arthritis and osteoarthritis. Ease pain and swelling caused by sprains and strains – such as sports injuries.",
+      warnings:
+        'While warfarin has enormous benefits, the downside is that it can make you bleed more than normal. This is because while you’re taking warfarin your blood won’t clot as easily. You’re more likely to get bleeding problems in the first few weeks of starting warfarin treatment and when you’re unwell - for instance if you have flu, are being sick (vomiting) or have diarrhoea. Apart from the risk of bleeding, warfarin is a very safe medicine. It’s safe to take for a long time, even many years. Less serious bleeding: It’s usual to bleed more easily than normal while you’re taking warfarin. The kind of bleeding you might have includes: periods that are heavier and last longer than normal, bleeding for a little longer than usual if you cut yourself, occasional nosebleeds (that last for less than 10 minutes), bleeding from your gums when you brush your teeth, bruises that come up more easily and take longer to fade than usual. This type of bleeding isn’t dangerous and should stop by itself. If it happens, keep taking the warfarin, but tell your doctor if the bleeding bothers you or doesn’t stop. Things you can do to help yourself: Cuts - press on the cut for 10 minutes with a clean cloth. Nosebleeds - read about how to stop a nosebleed or watch this video on nosebleeds. Bleeding gums - if your gums are bleeding, try using a soft toothbrush and waxed dental floss to clean your teeth. Bruises - these are harmless but can be unsightly. It might help to make them fade more quickly if you put an ice pack wrapped in a towel over the bruise for 10 minutes at a time several times a day. What you can do to prevent bleeding. While you’re taking warfarin be careful when you do activities that might cause an injury or a cut or bruising. It can help to: stop playing contact sports or other activities than can cause a head injury - such as football, rugby, hockey and horse riding. Wear gloves when you use sharp objects like scissors, knives and gardening tools. Stop wet shaving or removing hair with wax - use an electric razor or hair-removing cream instead. Take false teeth (dentures) or retainers out for a few hours a day, if you wear them, to give your gums a rest - don’t wear dentures or retainers that don’t fit properly. Tell your doctor, dentist or nurse that you take warfarin ahead of having any medical or dental procedures or surgery - that includes vaccinations and routine appointments with the dental hygienist. Occasionally, you can have serious bleeding from taking warfarin. This can be dangerous and needs urgent medical attention. Stop taking warfarin and call your doctor or anticoagulant clinic or go to your nearest hospital accident and emergency (A&E) department straight away if you get: red pee or black poo, large bruises or bruises that happen for no reason, nosebleeds that last longer than 10 minutes, blood in your vomit or you’re coughing up blood, severe headaches, fits (seizures), changes to your eyesight, numbness or tingling in your arms or legs, or feel very tired, weak or sick - these can be signs of bleeding in your brain, any bleeding from a cut or injury that won’t stop or slow down. There are other side effects of warfarin. For a full list see the leaflet inside your medicines packet.',
+      stock: 0,
+      medColour: '#fff',
+    },
   },
 
-    "doses": {
-        "1": {
-            "id": "1",
-            "time": "08:00",
-            "dose": "2",
-            "unit": "500mg tablet",
-            "med_id": 1
-        },
-        "2": {
-            "id": "2",
-            "time": "12:00",
-            "dose": "2",
-            "unit": "500mg tablet",
-            "med_id": 1
-        },
-        "3": {
-            "id": "3",
-            "time": "16:00",
-            "dose": "2",
-            "unit": "500mg tablet",
-            "med_id": 1
-        },
-        "4": {
-            "id": "4",
-            "time": "20:00",
-            "dose": "2",
-            "unit": "500mg tablet",
-            "med_id": 1
-        },
-        "5": {
-            "id": "5",
-            "time": "08:00",
-            "dose": "2",
-            "unit": "200mg tablet",
-            "med_id": 2
-        },
-        "6": {
-            "id": "6",
-            "time": "16:00",
-            "dose": "2",
-            "unit": "200mg tablet",
-            "med_id": 2
-        }
-       
+  doses: {
+    '1': {
+      id: '1',
+      time: '08:00',
+      dose: '2',
+      unit: '500mg tablet',
+      med_id: 1,
     },
+    '2': {
+      id: '2',
+      time: '12:00',
+      dose: '2',
+      unit: '500mg tablet',
+      med_id: 1,
+    },
+    '3': {
+      id: '3',
+      time: '16:00',
+      dose: '2',
+      unit: '500mg tablet',
+      med_id: 1,
+    },
+    '4': {
+      id: '4',
+      time: '20:00',
+      dose: '2',
+      unit: '500mg tablet',
+      med_id: 1,
+    },
+    '5': {
+      id: '5',
+      time: '08:00',
+      dose: '2',
+      unit: '200mg tablet',
+      med_id: 2,
+    },
+    '6': {
+      id: '6',
+      time: '16:00',
+      dose: '2',
+      unit: '200mg tablet',
+      med_id: 2,
+    },
+  },
 
-    "userMeds": [
-    ]
-}
 
- 
+  userMeds: [],
+};
+
 
 export default initial;
