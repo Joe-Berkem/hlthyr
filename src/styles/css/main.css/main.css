@@ -3,10 +3,13 @@ body {
 
 .mainContainer {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 700px));
   grid-template-rows: repeat(5, auto);
   background-color: #D9D9D9;
   font-family: 'Oxygen', sans-serif; }
+  @media screen and (max-width: 800px) {
+    .mainContainer {
+      display: block; } }
 
 .headerContainer {
   grid-column-start: 1;
