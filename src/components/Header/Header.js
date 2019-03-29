@@ -5,7 +5,6 @@ import HomeButton from '../Buttons/HomeButton.js';
 import SettingButton from '../Buttons/SettingsButton.js';
 
 
-
 const Header = () => (
 
 	<React.Fragment>

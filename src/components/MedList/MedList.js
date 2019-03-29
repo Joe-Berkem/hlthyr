@@ -1,5 +1,5 @@
 import React from 'react';
-import MedCardForm from '../MedCardForm/MedCardForm.js';
+import MedCardForm from '../MedCardForm/';
 
 const MedList = ({ meds }) => (
 
@@ -14,7 +14,6 @@ export default MedList;
 
 const styles = {
     container: {
-        marginTop: '1em',
         width: '100%',
         borderRadius: '8px',
         display: 'flex',

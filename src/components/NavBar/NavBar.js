@@ -14,7 +14,7 @@ const NavBar = () => (
 				<Link to='/my-meds'>My Meds</Link>
 			</li>
 			<li className="navbarItem">
-				<Link to='/stock'>Stock</Link>
+				<Link to='/settings'>Settings</Link>
 			</li>
     </ul>
  

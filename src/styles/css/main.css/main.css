@@ -1,3 +1,6 @@
+body {
+  margin: 0; }
+
 .mainContainer {
   display: grid;
   grid-template-columns: repeat(5, 20%);
@@ -45,6 +48,10 @@
   font-size: 1.2em;
   letter-spacing: 0.05em; }
 
+.navbarItem:hover {
+  background-color: #857eb1;
+  border-radius: 8px; }
+
 a {
   color: #EBEBE5;
   text-decoration: none; }
@@ -58,7 +65,11 @@ a {
   border-radius: 25px;
   text-align: center;
   min-height: 50vh;
-  margin: 1em; }
+  margin-top: 1em;
+  margin-left: 1em; }
+
+ 
+
   .screenContainer h3 {
     color: #EBEBE5; }
   .screenContainer p {

@@ -6,6 +6,7 @@ import NavBar from '../NavBar/NavBar.js';
 import MyMedsScreen from '../MyMedsScreen/MyMedsScreen.js';
 import StashScreen from '../StashScreen/StashScreen.js';
 import Sidebar from '../SideBar/Sidebar.js';
+import Settings from '../Settings/';
 
 import {
   BrowserRouter as Router,
@@ -23,6 +24,7 @@ const App = () => (
         <Route exact path="/" component={ ScheduleScreen }/>
         <Route exact path="/my-meds" component={ MyMedsScreen }/>
         <Route exact path="/stock" component={ StashScreen }/>
+        <Route exact path="/settings" component={ Settings }/>
       </Switch> 
 
     <Sidebar/>

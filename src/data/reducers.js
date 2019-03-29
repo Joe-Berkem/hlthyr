@@ -1,12 +1,16 @@
-const reducers = (state, action) => {
-  switch (action.type) {
-    case 'checkBoxDoom':
-      return updateDoses(state, action);
 
-    default:
-      return state;
-  }
-};
+const submitMed = (state, {medName, unit, dose, stock}) => ({
+    ...state, 
+    userMeds: [
+        ...state.userMeds, 
+        {
+            medName: medName,
+            unit: unit,
+            dose: dose,
+            stock: stock,
+        }
+    ]
+})
 
 const updateDoses = (state, action) => {
   const stateCopy = state;
@@ -23,6 +27,17 @@ const updateDoses = (state, action) => {
   }
 
   return { ...stateCopy };
+
+};
+
+const reducers = (state, action) => {
+  switch (action.type) {
+    case 'checkBoxDoom':
+      return updateDoses(state, action);
+      case "submit": return submitMed(state, action);
+    default:
+      return state;
+  }
 };
 
 export default reducers;
