@@ -81,7 +81,9 @@ const initial = {
     },
   },
 
+
   userMeds: [],
 };
+
 
 export default initial;
