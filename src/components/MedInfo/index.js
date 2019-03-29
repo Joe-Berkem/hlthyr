@@ -11,39 +11,29 @@ const mapStateToProps = ({ meds }, { med_id }) => ({
 // WE NEED JOE'S CAPITALISATION ROUTINE (FOR THE INFOHEADER LINE). PERHAPS MOVE IT INTO A UTILS MODULE AND IMPORT?
 const MedInfo = ({ med }) => (
   <section>
-    <h3 style={styles.infoBannerText}>Medicine Info</h3>
-    <p style={styles.infoHeader}>{capitalise(med.name)}:</p>
-    <p style={styles.infoText}>{med.desc}</p>
-    <p style={styles.infoHeader}>Dangers:</p>
-    <p style={styles.infoText}>{med.warnings}</p>
+    <h3>Medicine Info</h3>
+
+    <div className="infoHeader">
+      <p className="infoHeaderText">{capitalise(med.name)}:</p>
+    </div>
+
+    <div className="infoContainer">
+      <p className="infoContainerText">{med.desc}</p>
+    </div>
+
+    <div className="infoHeader">
+      <p className="infoHeaderText">Dangers:</p>
+    </div>
+
+    <div className="infoContainer">
+      <p className="infoContainerText">{med.warnings}</p>
+    </div>
+
   </section>
 );
 
 export default connect(mapStateToProps)(MedInfo);
 
-const styles = {
-  container: {
-    marginTop: '1em',
-    width: '100%',
-    borderRadius: '8px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
-  },
-  infoBannerText: {
-    paddingLeft: '1em',
-    color: 'red',
-  },
-  infoHeader: {
-    alignText: 'left',
-    color: 'red',
-    marginTop: '1em',
-    fontWeight: 'bold',
-  },
-  infoText: {
-    alignText: 'left',
-    color: 'red',
-    marginTop: '0.5em',
-  },
-};
+
+
+
