@@ -19,15 +19,21 @@ const App = () => (
   <Router>
     <Header/>
     <NavBar/>
-    
+
+    <div className="mainContainer">    
+
       <Switch>
-        <Route exact path="/" component={ ScheduleScreen }/>
-        <Route exact path="/my-meds" component={ MyMedsScreen }/>
-        <Route exact path="/stock" component={ StashScreen }/>
-        <Route exact path="/settings" component={ Settings }/>
+
+          <Route exact path="/" component={ ScheduleScreen }/>
+          <Route exact path="/my-meds" component={ MyMedsScreen }/>
+          <Route exact path="/stock" component={ StashScreen }/>
+          <Route exact path="/settings" component={ Settings }/>
+
       </Switch> 
 
-    <Sidebar/>
+      <Sidebar/>
+    </div>
+
   </Router>
 );
 
