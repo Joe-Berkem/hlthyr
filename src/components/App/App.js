@@ -1,4 +1,5 @@
 import React from 'react';
+import { Component } from 'react';
 import '../../styles/css/main.css/main.css';
 import Header from '../Header/Header.js';
 import ScheduleScreen from '../ScheduleScreen/ScheduleScreen';
@@ -14,21 +15,38 @@ import {
   Switch,
 } from "react-router-dom";
 
-const App = () => (
- 
-  <Router>
-    <Header/>
-    <NavBar/>
-    
-      <Switch>
-        <Route exact path="/" component={ ScheduleScreen }/>
-        <Route exact path="/my-meds" component={ MyMedsScreen }/>
-        <Route exact path="/stock" component={ StashScreen }/>
-        <Route exact path="/settings" component={ Settings }/>
-      </Switch> 
 
-    <Sidebar/>
-  </Router>
-);
+
+class App extends Component {
+
+  constructor(props){
+    super(props)
+  }
+
+  componentDidMount() {
+    this.props.getUserInfo(1);
+  }
+
+
+  render(){
+
+    return(
+      <Router>
+        <Header/>
+        <NavBar/>
+        
+          <Switch>
+            <Route exact path="/" component={ ScheduleScreen }/>
+            <Route exact path="/my-meds" component={ MyMedsScreen }/>
+            <Route exact path="/stock" component={ StashScreen }/>
+            <Route exact path="/settings" component={ Settings }/>
+          </Switch> 
+
+        <Sidebar/>
+      </Router>
+    );
+  }
+};
 
 export default App;
+
