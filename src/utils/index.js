@@ -17,11 +17,12 @@ export const capitalise = (string) =>
 
 export const setDoses = (state) => {
   let { unit, dose, stock, frequency, medId } = state.userMeds;
+  console.log('userMeds: ', state.userMeds);
   let stateCopy = state;
   let dosesList = stateCopy.doses;
   let dosesCount = Object.keys(dosesList).length;
   stateCopy.meds[medId].stock = stock;
-  let medName = stateCopy.meds[medId];
+  let medName = stateCopy.meds[medId].name;
 
   switch (frequency) {
     case 'Once':

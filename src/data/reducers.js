@@ -1,19 +1,19 @@
-// import { buildFakeData, setDoses } from '../utils';
+import { setDoses } from '../utils';
 
-const submitMed = (state, {medName, unit, dose, stock, frequency, medId}) => ({
-    ...state, 
-    userMeds: [
-        ...state.userMeds, 
-        {
-            medName: medName,
-            medId: medId,
-            unit: unit,
-            dose: dose,
-            stock: stock,
-            frequency: frequency,
-        }
-    ]
-})
+const submitMed = (
+  state,
+  { medName, unit, dose, stock, frequency, medId }
+) => ({
+  ...state,
+  userMeds: {
+    medName: medName,
+    medId: medId,
+    unit: unit,
+    dose: dose,
+    stock: stock,
+    frequency: frequency,
+  },
+});
 
 const updateDoses = (state, action) => {
   const stateCopy = state;
@@ -35,11 +35,9 @@ const updateDoses = (state, action) => {
 const reducers = (state, action) => {
   switch (action.type) {
     case 'checkBoxDoom':
-      // let fakeState = buildFakeData(state);
-      // setDoses(fakeState);
       return updateDoses(state, action);
     case 'submit':
-      return submitMed(state, action);
+      return setDoses(submitMed(state, action));
     default:
       return state;
   }
