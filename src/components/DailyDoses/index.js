@@ -2,11 +2,7 @@ import { connect } from "react-redux";
 import DailyDoses from "./DailyDoses";
 
 const mapStateToProps = state => {
-    let doses = [];
-    
-    for (let value of Object.values(state.doses)) {
-        doses.push(value);
-    }
+    let doses = Object.values (state.doses) 
     
     
     return {
