@@ -1,11 +1,9 @@
 import React from 'react';
 import '../../styles/css/main.css/main.css';
 import MedList from '../MedList/MedList.js';
-import MedCardForm from '../MedCardForm/MedCardForm.js';
+import MedCardForm from '../MedCardForm/';
 
 const MyMedsScreen = ({ userMeds }) => {
-  console.log('userMeds: ', userMeds);
-
   return (
     <section className='screenContainer'>
       <div style={styles.container}>
@@ -16,7 +14,7 @@ const MyMedsScreen = ({ userMeds }) => {
 
         <MedList />
 
-        <div style={styles.currentMedsBanner}>
+        {/* <div style={styles.currentMedsBanner}>
           <h3 style={styles.dateBannerText}>Your current medications</h3>
         </div>
 
@@ -30,7 +28,7 @@ const MyMedsScreen = ({ userMeds }) => {
             frequency={med.frequency}
             unit={med.unit}
           />
-        ))}
+        ))} */}
       </div>
     </section>
   );
