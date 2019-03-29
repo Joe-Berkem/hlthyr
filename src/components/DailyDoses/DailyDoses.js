@@ -13,7 +13,7 @@ const DailyDoses = ({ doses }) => (
     <div style={styles.dateBanner}>
       <h3 style={styles.dateBannerText}>Today</h3>
     </div>
-    {doses.map((dose, i, array) => (
+    {doses.sort((a, b) => a.time.split(":")[0]-b.time.split(":")[0] ).map((dose, i, array) => (
       <DoseCard
         key={i}
         id={dose.id}

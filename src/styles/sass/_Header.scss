@@ -5,11 +5,7 @@
 	grid-row-start: 1;
 	grid-row-end: 2;
 	background-color: #63599E;
-	// background-image:
-	// 	linear-gradient(
-	// 		#EBEBE5, #9AB1AE
- //    	);
-   text-align: center;
+	text-align: center;
 }
 
 
@@ -18,9 +14,12 @@
 	grid-column-end: 4;
 	grid-row-start: 1;
 	grid-row-end: 2;
-	font-family: sans-serif;
+	font-family: 'Rancho', cursive;
+	font-size: 3.2em;
+	letter-spacing: 0.07em;
 	color: #EBEBE5;
-  	font-weight: bold;
   	padding: 50px 30px;
   	margin: 0px;
 }
+
+
