@@ -17,6 +17,7 @@ const MyMedsScreen = ({ userMeds, meds }) => {
           <h3 style={styles.dateBannerText}>Your current medications</h3>
         </div>
 
+
         {meds.map((med, i) => (
             med.stock > 0 ? 
             <div style={{...styles.medItem, backgroundColor: med.medColour}}>
