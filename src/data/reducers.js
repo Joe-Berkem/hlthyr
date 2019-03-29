@@ -1,3 +1,4 @@
+// import { buildFakeData, setDoses } from '../utils';
 
 const submitMed = (state, {medName, unit, dose, stock, frequency, medId}) => ({
     ...state, 
@@ -29,14 +30,16 @@ const updateDoses = (state, action) => {
   }
 
   return { ...stateCopy };
-
 };
 
 const reducers = (state, action) => {
   switch (action.type) {
     case 'checkBoxDoom':
+      // let fakeState = buildFakeData(state);
+      // setDoses(fakeState);
       return updateDoses(state, action);
-      case "submit": return submitMed(state, action);
+    case 'submit':
+      return submitMed(state, action);
     default:
       return state;
   }
