@@ -6,8 +6,10 @@ class MedCardForm extends Component {
   
       this.state = {
           medName: this.props.medName,
+          medId:this.props.medId,
           stock: this.props.stock,
           dose: this.props.dose,
+          frequency: this.props.frequency,
           unit: this.props.unit,
       };
   
@@ -15,12 +17,27 @@ class MedCardForm extends Component {
       this.handleChangeStock = this.handleChangeStock.bind(this);
       this.handleChangeDose = this.handleChangeDose.bind(this);
       this.handleChangeUnit = this.handleChangeUnit.bind(this);
+      this.handleChangeFrequency = this.handleChangeFrequency.bind(this);
   
       this.handleSubmit = this.handleSubmit.bind(this);
     }
   
     handleChangeMedName(e) {
-      this.setState({ medName: e.currentTarget.value });
+      let medId 
+
+      for (let [key, value] of Object.entries(this.props.meds)) {
+        console.log(this.props.meds);
+        if (value.name.toLowerCase() === e.currentTarget.value.toLowerCase()) {
+          medId = key;
+        }
+        else {
+          medId = null;
+        }
+
+      }
+
+
+      this.setState({ medName: e.currentTarget.value, medId: medId });
     }
 
     handleChangeStock(e) {
@@ -34,15 +51,19 @@ class MedCardForm extends Component {
     handleChangeUnit(e) {
         this.setState({ unit: e.currentTarget.value });
       }
+
+    handleChangeFrequency(e) {
+      this.setState({ frequency: e.currentTarget.value });
+    }
+
   
     handleSubmit(e) {
       e.preventDefault();
-      console.log(this.props.submitMed);
       this.props.submitMed(this.state);
     }
   
     render() {
-        let {medName, stock, unit, dose} = this.state;
+        let {medName, stock, unit, dose, frequency} = this.state;
   
       return (
         <form onSubmit={ this.handleSubmit }>
@@ -54,17 +75,17 @@ class MedCardForm extends Component {
                     onChange={this.handleChangeMedName}
                 >
                     <option>Choose from ...</option>
-                    <option selected={ medName === "Paracetomol" ? "selected" : ""}
+                    <option medId="1" selected={ medName === "Paracetomol" ? "selected" : ""}
                     value="Paracetomol">Paracetomol</option>
-                    <option selected={ medName === "Ibuprofen" ? "selected" : ""} value="Ibuprofen">Ibuprofen</option>
-                    <option selected={ medName === "Warfarin" ? "selected" : ""} value="Warfarin">Warfarin</option>
-                    <option selected={ medName === "Asperin" ? "selected" : ""} value="Asperin">Asperin</option>
-                    <option selected={ medName === "Codeine" ? "selected" : ""} value="Codeine">Codeine</option>
-                    <option selected={ medName === "Amoxicillin" ? "selected" : ""} value="Amoxicillin">Amoxicillin</option>
-                    <option selected={ medName === "Diazepan" ? "selected" : ""} value="Diazepan">Diazepan</option>
-                    <option selected={ medName === "Zopiclone" ? "selected" : ""} value="Zopiclone">Zopiclone</option>
-                    <option selected={ medName === "Nitrofurantoin" ? "selected" : ""} value="Nitrofurantoin">Nitrofurantoin</option>
-                    <option selected={ medName === "Pravastatin" ? "selected" : ""}value="Pravastatin">Pravastatin</option>
+                    <option medId="2" selected={ medName === "Ibuprofen" ? "selected" : ""} value="Ibuprofen">Ibuprofen</option>
+                    <option medId="3" selected={ medName === "Warfarin" ? "selected" : ""} value="Warfarin">Warfarin</option>
+                    <option medId="4" selected={ medName === "Asperin" ? "selected" : ""} value="Asperin">Asperin</option>
+                    <option medId="5" selected={ medName === "Codeine" ? "selected" : ""} value="Codeine">Codeine</option>
+                    <option medId="6" selected={ medName === "Amoxicillin" ? "selected" : ""} value="Amoxicillin">Amoxicillin</option>
+                    <option medId="7" selected={ medName === "Diazepan" ? "selected" : ""} value="Diazepan">Diazepan</option>
+                    <option medId="8" selected={ medName === "Zopiclone" ? "selected" : ""} value="Zopiclone">Zopiclone</option>
+                    <option medId="9" selected={ medName === "Nitrofurantoin" ? "selected" : ""} value="Nitrofurantoin">Nitrofurantoin</option>
+                    <option medId="10" selected={ medName === "Pravastatin" ? "selected" : ""}value="Pravastatin">Pravastatin</option>
                 </select>
             </div>
             
@@ -86,6 +107,19 @@ class MedCardForm extends Component {
                 type="number"
                 value={dose}
                 />
+            </div>
+
+            <div style={styles.column}>
+                <label style={styles.text}>Frequency</label>
+                <select 
+                    style={styles.select}
+                    onChange={this.handleChangeFrequency}
+                >
+                    <option>Choose from ...</option>
+                    <option selected={ frequency === "Once" ? "selected" : ""} value="Once" index="1">Once</option>
+                    <option selected={ frequency === "Twice" ? "selected" : ""} value="Twice" index="2">Twice</option>
+                    <option selected={ frequency === "Three Times" ? "selected" : ""} value="Three Times" index="3">Three Times</option>
+                </select>
             </div>
 
             <div style={styles.column}>
