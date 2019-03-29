@@ -2,13 +2,11 @@
 .navbarContainer {
 	margin: 0px;
 	padding: 0px;
+	width: 100%;
 	list-style-type: none;
 	display: inline-flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
-	grid-column-start: 1;
-	grid-column-end: 6;
-	grid-row-start: 2;
-	grid-row-end: 3;
 	background-color: #5B52A1;
 }
 
@@ -17,8 +15,10 @@
 	text-align: center;
 	color: #EBEBE5;
 	padding: 20px 20px;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	letter-spacing: 0.05em;
+	font-family: 'Oxygen', sans-serif;
+	text-transform: uppercase;
 }
 
 .navbarItem:hover {
@@ -30,3 +30,51 @@ a {
 	color: #EBEBE5;
   	text-decoration: none;
 }
+
+
+label {
+	font-size: 2.2em;
+	color: #EBEBE5;
+	display: none;
+}
+
+#toggle {
+	display: none;
+}
+
+
+@media only screen and (max-width: 650px) {
+	label {
+		display: block;
+		text-align: center;
+		background-color: #5B52A1;
+		padding: 10px;
+	}
+
+	.navbarContainer {
+		text-align: center;
+		width: 100%;
+		display: none;
+		margin: 0px;
+	}
+
+	.navbarContainer li {
+		display: block;
+		width: 100%;
+
+	}
+
+	#toggle:checked + .navbarContainer {
+		display: inline-flex;
+	}
+
+}
+
+
+
+
+
+
+
+
+

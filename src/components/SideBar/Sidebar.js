@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import '../../styles/css/main.css/main.css';
 import Calendar from 'react-calendar';
 import MedInfo from '../MedInfo';
@@ -7,12 +8,19 @@ import MedInfo from '../MedInfo';
 // or the calendar
 const showMedInfo = true;
 
-const Sidebar = () => (
+const mapStateToProps = (state) => {
+  console.log('state.app.medInfoItem', state.app.medInfoItem);
+  return {
+    medInfoItem: state.app.medInfoItem,
+  };
+};
+
+const Sidebar = ({ medInfoItem }) => (
   <aside className='sidebarContainer'>
     {showMedInfo ? (
       // If so, show the MedInfo component, passing through
       // the id of the respective medecine as props.
-      <MedInfo med_id={1} />
+      <MedInfo med_id={medInfoItem} />
     ) : (
       // Otherwise show the calendar component
       <Calendar
@@ -25,4 +33,5 @@ const Sidebar = () => (
     )}
   </aside>
 );
-export default Sidebar;
+
+export default connect(mapStateToProps)(Sidebar);

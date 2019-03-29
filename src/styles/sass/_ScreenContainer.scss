@@ -2,15 +2,21 @@
 .screenContainer {
 	background-color: #5B52A140; //transparency 40%
 	grid-column-start: 1;
-	grid-column-end: 4;
-	grid-row-start: 3;
-	grid-row-end: 5;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
 	border-radius: 25px;
 	text-align: center;
 	min-height: 50vh;
-	margin-top: 1em;
-	margin-left: 1em;
 	margin: 1em;
+	
+
+	@media screen and (max-width: 1178px) { 
+		max-width: 900px;
+		margin: 20px auto;
+		padding-top: 1px;
+	}
+
 	
 	h3 {
 		color: #EBEBE5;

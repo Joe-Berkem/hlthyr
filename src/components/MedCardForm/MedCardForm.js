@@ -28,6 +28,7 @@ class MedCardForm extends Component {
     for (let [key, value] of Object.entries(this.props.meds)) {
       if (value.name.toLowerCase() === e.currentTarget.value.toLowerCase()) {
         medId = key;
+        this.props.amendMedInfo(key);
       }
     }
 
@@ -88,10 +89,10 @@ class MedCardForm extends Component {
               </option>
               <option
                 medId='4'
-                selected={medName === 'Asperin' ? 'selected' : ''}
-                value='Asperin'
+                selected={medName === 'Aspirin' ? 'selected' : ''}
+                value='Aspirin'
               >
-                Asperin
+                Aspirin
               </option>
               <option
                 medId='5'

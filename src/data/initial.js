@@ -1,4 +1,7 @@
 const initial = {
+  app: {
+    medInfoItem: '1',
+  },
   user: {
     id: '1',
     name: 'Dorothy',
@@ -78,7 +81,9 @@ const initial = {
     },
   },
 
+
   userMeds: [],
 };
+
 
 export default initial;

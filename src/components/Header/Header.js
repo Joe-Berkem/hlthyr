@@ -5,25 +5,30 @@ import HomeButton from '../Buttons/HomeButton.js';
 import SettingButton from '../Buttons/SettingsButton.js';
 
 
+
 const Header = () => (
 
 	<React.Fragment>
 
 
-		<HomeButton />
+		
 
 
 		<div className="headerContainer">
+
+			<HomeButton />
+
 	        <h1 className="headerLogo">
 	        HLTHYR
 	        </h1>
-	    </div>
 
+	        {/*
+	        <SettingButton />
+	    	*/}
+	
+		    <LogOutButton />
 
-	    <SettingButton />
-
-
-	    <LogOutButton />
+		</div>
 
 	</React.Fragment>
  

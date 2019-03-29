@@ -1,3 +1,9 @@
+export const amendMedInfo = (key) => {
+  return {
+    type: 'amend',
+    key: key,
+  };
+};
 
 
 export const submitMed = ( {medName, stock, unit, dose, medId, frequency}) => {
@@ -26,4 +32,5 @@ export const setUserDoses = ( data ) => {
 		data,
 	};
 };
+
 

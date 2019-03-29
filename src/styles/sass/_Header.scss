@@ -1,25 +1,22 @@
 
 .headerContainer {
-	grid-column-start: 1;
-	grid-column-end: 6;
-	grid-row-start: 1;
-	grid-row-end: 2;
 	background-color: #63599E;
 	text-align: center;
+	display: flex;
+	justify-content: space-between;
 }
 
 
 .headerLogo {
-	grid-column-start: 3;
-	grid-column-end: 4;
-	grid-row-start: 1;
-	grid-row-end: 2;
+	display: inline-block;
 	font-family: 'Rancho', cursive;
-	font-size: 3.2em;
+	font-size: 3.2rem;
 	letter-spacing: 0.07em;
 	color: #EBEBE5;
   	padding: 50px 30px;
   	margin: 0px;
+  	align-self: center;
+
 }
 
 
