@@ -39,14 +39,32 @@ const updateDoses = (state, action) => {
   return { ...stateCopy };
 };
 
+const setUserMeds = (state, action) => ({
+  ...state,
+    meds: action.data,
+})
+
+const setUserDoses = (state, action) => ({
+  ...state,
+    doses: action.data,
+})
+
 const reducers = (state, action) => {
   switch (action.type) {
     case 'checkBoxDoom':
       return updateDoses(state, action);
+
+    case "setUserMeds": return setUserMeds(state, action);
+    case "setUserDoses": return setUserDoses(state, action);
+
     case 'submit':
       return setDoses(submitMed(state, action));
+
     case 'amend':
       return amendInfo(state, action);
+
+
+
     default:
       return state;
   }

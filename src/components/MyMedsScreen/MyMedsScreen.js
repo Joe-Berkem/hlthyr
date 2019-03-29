@@ -1,9 +1,8 @@
 import React from 'react';
 import '../../styles/css/main.css/main.css';
 import MedList from '../MedList/MedList.js';
-import MedCardForm from '../MedCardForm/';
 
-const MyMedsScreen = ({ userMeds }) => {
+const MyMedsScreen = ({ userMeds, meds }) => {
   return (
     <section className='screenContainer'>
       <div style={styles.container}>
@@ -18,18 +17,15 @@ const MyMedsScreen = ({ userMeds }) => {
           <h3 style={styles.dateBannerText}>Your current medications</h3>
         </div>
 
-        {/*
-        {userMeds.map((med, i) => (
-          <MedCardForm
-            key={i}
-            medName={med.medName}
-            medId={med.medId}
-            stock={med.stock}
-            dose={med.dose}
-            frequency={med.frequency}
-            unit={med.unit}
-          />
-        ))} */}
+
+        {meds.map((med, i) => (
+            med.stock > 0 ? 
+            <div style={{...styles.medItem, backgroundColor: med.medColour}}>
+                <h3 style={styles.MedText}>{med.name}</h3>
+                <p>{med.stock} in stock</p>
+            </div>
+            : null
+        ))}
       </div>
     </section>
   );
@@ -66,4 +62,15 @@ const styles = {
     paddingLeft: '1em',
     color: 'white',
   },
+  medItem: {
+    width: '40%',
+    minHeight: '2em',
+    borderRadius: '8px',
+    textAlign: 'center',
+    padding: 'auto, 0',
+    margin: '1em',
+  },
+  medText: {
+    color: 'black',
+  }
 };
