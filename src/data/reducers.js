@@ -1,17 +1,19 @@
 // import { buildFakeData, setDoses } from '../utils';
 
-const submitMed = (state, { medName, unit, dose, stock }) => ({
-  ...state,
-  userMeds: [
-    ...state.userMeds,
-    {
-      medName: medName,
-      unit: unit,
-      dose: dose,
-      stock: stock,
-    },
-  ],
-});
+const submitMed = (state, {medName, unit, dose, stock, frequency, medId}) => ({
+    ...state, 
+    userMeds: [
+        ...state.userMeds, 
+        {
+            medName: medName,
+            medId: medId,
+            unit: unit,
+            dose: dose,
+            stock: stock,
+            frequency: frequency,
+        }
+    ]
+})
 
 const updateDoses = (state, action) => {
   const stateCopy = state;

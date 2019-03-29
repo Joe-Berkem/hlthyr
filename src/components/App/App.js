@@ -3,31 +3,26 @@ import '../../styles/css/main.css/main.css';
 import Header from '../Header/Header.js';
 import ScheduleScreen from '../ScheduleScreen/ScheduleScreen';
 import NavBar from '../NavBar/NavBar.js';
-import MyMedsScreen from '../MyMedsScreen/MyMedsScreen.js';
+import MyMedsScreen from '../MyMedsScreen/';
 import StashScreen from '../StashScreen/StashScreen.js';
 import Sidebar from '../SideBar/Sidebar.js';
 import Settings from '../Settings/';
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => (
- 
   <Router>
-    <Header/>
-    <NavBar/>
-    
-      <Switch>
-        <Route exact path="/" component={ ScheduleScreen }/>
-        <Route exact path="/my-meds" component={ MyMedsScreen }/>
-        <Route exact path="/stock" component={ StashScreen }/>
-        <Route exact path="/settings" component={ Settings }/>
-      </Switch> 
+    <Header />
+    <NavBar />
 
-    <Sidebar/>
+    <Switch>
+      <Route exact path='/' component={ScheduleScreen} />
+      <Route exact path='/my-meds' component={MyMedsScreen} />
+      <Route exact path='/stock' component={StashScreen} />
+      <Route exact path='/settings' component={Settings} />
+    </Switch>
+
+    <Sidebar />
   </Router>
 );
 
