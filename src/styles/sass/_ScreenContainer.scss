@@ -8,14 +8,13 @@
 	border-radius: 25px;
 	text-align: center;
 	min-height: 50vh;
-	margin-top: 1em;
-	margin-left: 1em;
 	margin: 1em;
 	
 
 	@media screen and (max-width: 1178px) { 
 		max-width: 900px;
 		margin: 20px auto;
+		padding-top: 1px;
 	}
 
 	
