@@ -1,13 +1,15 @@
 
-const submitMed = (state, {medName, unit, dose, stock}) => ({
+const submitMed = (state, {medName, unit, dose, stock, frequency, medId}) => ({
     ...state, 
     userMeds: [
         ...state.userMeds, 
         {
             medName: medName,
+            medId: medId,
             unit: unit,
             dose: dose,
             stock: stock,
+            frequency: frequency,
         }
     ]
 })

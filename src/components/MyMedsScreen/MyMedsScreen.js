@@ -1,9 +1,10 @@
 import React from 'react';
 import '../../styles/css/main.css/main.css';
-import MedList from '../MedList/MedList.js'
+import MedList from '../MedList/MedList.js';
+import MedCardForm from '../MedCardForm/MedCardForm.js'
 
 
-const MyMedsScreen = () => (
+const MyMedsScreen = ({userMeds}) => (
         <section className="screenContainer">
             <div style={styles.container}>
                 <h3>My Meds</h3>
@@ -16,7 +17,21 @@ const MyMedsScreen = () => (
                 <div style={styles.currentMedsBanner}>
                     <h3 style={styles.dateBannerText}>Your current medications</h3>
                 </div>
+
+                {userMeds.map((med, i) => (
+                    <MedCardForm
+                        key={i}
+                        medName={userMeds.medName}
+                        medId={userMeds.medId}
+                        stock={userMeds.stock}
+                        dose={userMeds.dose}
+                        frequency={userMeds.frequency}
+                        unit={userMeds.frequency}
+                    />
+                ))}                  
             </div>
+
+
 
         </section>
 );
