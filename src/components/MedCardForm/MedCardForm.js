@@ -37,6 +37,7 @@ class MedCardForm extends Component {
   
     handleSubmit(e) {
       e.preventDefault();
+      console.log(this.props.submitMed);
       this.props.submitMed(this.state);
     }
   

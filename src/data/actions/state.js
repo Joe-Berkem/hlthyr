@@ -1,4 +1,4 @@
-export const submitMed = ( medName, stock, unit, dose) => {
+export const submitMed = ( {medName, stock, unit, dose}) => {
     return {
         type: "submit",
         medName: medName,

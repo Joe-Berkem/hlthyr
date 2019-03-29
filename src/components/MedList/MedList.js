@@ -1,5 +1,5 @@
 import React from 'react';
-import MedCardForm from '../MedCardForm/MedCardForm.js';
+import MedCardForm from '../MedCardForm/';
 
 const MedList = ({ meds }) => (
 
