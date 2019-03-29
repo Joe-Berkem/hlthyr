@@ -15,6 +15,13 @@ const submitMed = (
   },
 });
 
+const amendInfo = (state, id) => {
+  console.log('Getting info for med index: ', id);
+  let stateCopy = state;
+  stateCopy.app.medInfoItem = id.key;
+  return { ...stateCopy };
+};
+
 const updateDoses = (state, action) => {
   const stateCopy = state;
   const med_id = stateCopy.doses[action.id].med_id;
@@ -38,6 +45,8 @@ const reducers = (state, action) => {
       return updateDoses(state, action);
     case 'submit':
       return setDoses(submitMed(state, action));
+    case 'amend':
+      return amendInfo(state, action);
     default:
       return state;
   }

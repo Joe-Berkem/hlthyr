@@ -14,10 +14,11 @@ const MyMedsScreen = ({ userMeds }) => {
 
         <MedList />
 
-        {/* <div style={styles.currentMedsBanner}>
+        <div style={styles.currentMedsBanner}>
           <h3 style={styles.dateBannerText}>Your current medications</h3>
         </div>
 
+        {/*
         {userMeds.map((med, i) => (
           <MedCardForm
             key={i}
