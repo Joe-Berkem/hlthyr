@@ -4,17 +4,12 @@ import '../../styles/css/main.css/main.css';
 import Header from '../Header/Header.js';
 import ScheduleScreen from '../ScheduleScreen/ScheduleScreen';
 import NavBar from '../NavBar/NavBar.js';
-import MyMedsScreen from '../MyMedsScreen/MyMedsScreen.js';
+import MyMedsScreen from '../MyMedsScreen/';
 import StashScreen from '../StashScreen/StashScreen.js';
 import Sidebar from '../SideBar/Sidebar.js';
 import Settings from '../Settings/';
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from "react-router-dom";
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 class App extends Component {
@@ -47,6 +42,7 @@ class App extends Component {
     );
   }
 };
+
 
 export default App;
 

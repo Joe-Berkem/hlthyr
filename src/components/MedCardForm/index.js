@@ -2,10 +2,16 @@ import { connect } from "react-redux";
 import MedCardForm from "./MedCardForm";
 import { submitMed } from "../../data/actions/state.js";
 
+const mapStateToProps = state => {
+    return {
+        meds: state.meds
+    }
+}
+
 const mapDispatchToProps = dispatch => {
     return {
         submitMed: (data) => dispatch(submitMed(data)),
     };
 };
 
-export default connect(null, mapDispatchToProps)(MedCardForm);
+export default connect(mapStateToProps, mapDispatchToProps)(MedCardForm);
