@@ -1,9 +1,18 @@
 import React from 'react';
 import { capitalise } from '../../utils';
+// import { checkBoxDoom } from '../../actions/doseInfo';
 
-// const capitalise = (string) => string.charAt(0).toUpperCase() + string.slice(1);
-
-const DoseCard = ({ time, medName, medColour, dose, unit }) => (
+const DoseCard = ({
+  id,
+  time,
+  medName,
+  medColour,
+  dose,
+  unit,
+  onClickCheckbox,
+  taken,
+  missed,
+}) => (
   <div style={styles.container}>
     <div style={styles.column}>
       <p style={styles.text}>{time}</p>
@@ -17,8 +26,22 @@ const DoseCard = ({ time, medName, medColour, dose, unit }) => (
     </div>
 
     <div style={styles.column}>
-      <p style={styles.text}>Taken</p>
-      <input type='checkbox' />
+      <div>
+        <p style={styles.text}>Taken</p>
+        <input
+          checked={taken}
+          onClick={() => onClickCheckbox('taken', id, !taken)}
+          type='checkbox'
+        />
+      </div>
+      <div>
+        <p style={styles.text}>Missed</p>
+        <input
+          checked={missed}
+          onClick={() => onClickCheckbox('missed', id, !missed)}
+          type='checkbox'
+        />
+      </div>
     </div>
   </div>
 );
@@ -41,8 +64,8 @@ const styles = {
     display: 'flex',
     height: '50%',
     borderRadius: '8px',
-    flexDirection: 'column',
-    justifyContent: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: 'white',
     margin: '1em 0',
