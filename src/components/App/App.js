@@ -10,7 +10,7 @@ import Sidebar from '../SideBar/Sidebar';
 import Settings from '../Settings/';
 import LogOutScreen from '../LogOutScreen/LogOutScreen.js';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
 
@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.props.getUserInfo(1);
+    // this.props.getUserInfo(1);
   }
 
 
