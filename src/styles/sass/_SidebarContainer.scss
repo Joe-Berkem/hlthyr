@@ -1,0 +1,63 @@
+
+.sidebarContainer {
+	background-color: #EBEBE5;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	border-radius: 25px;
+	text-align: center;
+	border-top: 1em;
+	min-height: 50vh;
+	min-width: 400px;
+	max-width: 900px;
+	margin: 1em auto;
+	color: #696969; //dimgrey colour for container header txt
+
+	@media screen and (max-width: 1178px) { 
+		display: block;
+		text-align: center;
+		padding: 1px 0px;
+
+
+	}
+
+
+
+}
+
+
+.infoHeader {
+	margin: 0px auto;
+	width: 90%;
+	background-color: #5271FF;
+	border-radius: 8px;
+}
+
+.infoHeaderText {
+	color: #EBEBE5;
+	font-weight: bold;
+	letter-spacing: 0.04em;
+	font-size: 1.3em;
+	text-align: left;
+	padding: 4%;
+	margin: 0px;
+}
+
+.infoContainer {
+	width: 80%;
+	margin: 0px auto;
+
+}
+
+.infoContainerText {
+	color: #696969; //dimgrey colour for sidebar info txt
+	font-size: 0.87em;
+	text-align: left;
+	padding: auto;
+}
+
+
+
+
+

@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  background-color: #D9D9D9;
+  min-width: 300px; }
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: repeat(2, auto);
+  font-family: 'Oxygen', sans-serif; }
+  @media screen and (max-width: 1178px) {
+    .mainContainer {
+      display: block;
+      text-align: center; } }
+
+.headerContainer {
+  background-color: #63599E;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; }
+
+.headerLogo {
+  display: inline-block;
+  font-family: 'Rancho', cursive;
+  font-size: 3.2rem;
+  letter-spacing: 0.07em;
+  color: #EBEBE5;
+  padding: 50px 30px;
+  margin: 0px;
+  align-self: center; }
+
+.navbarContainer {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  list-style-type: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #5B52A1; }
+
+.navbarItem {
+  display: inline;
+  text-align: center;
+  color: #EBEBE5;
+  padding: 20px 20px;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+  font-family: 'Oxygen', sans-serif;
+  text-transform: uppercase; }
+
+.navbarItem:hover {
+  background-color: #857eb1;
+  border-radius: 8px; }
+
+a {
+  color: #EBEBE5;
+  text-decoration: none; }
+
+label {
+  font-size: 2.2em;
+  color: #EBEBE5;
+  display: none; }
+
+#toggle {
+  display: none; }
+
+@media only screen and (max-width: 650px) {
+  label {
+    display: block;
+    text-align: center;
+    background-color: #5B52A1;
+    padding: 10px; }
+  .navbarContainer {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin: 0px; }
+  .navbarContainer li {
+    display: block;
+    width: 100%; }
+  #toggle:checked + .navbarContainer {
+    display: inline-flex; } }
+
+.screenContainer {
+  background-color: #5B52A140;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border-radius: 25px;
+  text-align: center;
+  min-height: 50vh;
+  margin: 1em; }
+  @media screen and (max-width: 1178px) {
+    .screenContainer {
+      max-width: 900px;
+      margin: 20px auto;
+      padding-top: 1px; } }
+  .screenContainer h3 {
+    color: #EBEBE5; }
+  .screenContainer p {
+    color: black;
+    font-size: 11px; }
+
+.sidebarContainer {
+  background-color: #EBEBE5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border-radius: 25px;
+  text-align: center;
+  border-top: 1em;
+  min-height: 50vh;
+  min-width: 400px;
+  max-width: 900px;
+  margin: 1em auto;
+  color: #696969; }
+  @media screen and (max-width: 1178px) {
+    .sidebarContainer {
+      display: block;
+      text-align: center;
+      padding: 1px 0px; } }
+
+.infoHeader {
+  margin: 0px auto;
+  width: 90%;
+  background-color: #5271FF;
+  border-radius: 8px; }
+
+.infoHeaderText {
+  color: #EBEBE5;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  font-size: 1.3em;
+  text-align: left;
+  padding: 4%;
+  margin: 0px; }
+
+.infoContainer {
+  width: 80%;
+  margin: 0px auto; }
+
+.infoContainerText {
+  color: #696969;
+  font-size: 0.87em;
+  text-align: left;
+  padding: auto; }
+
+.calendarCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red; }
+
+.react-calendar {
+  margin-top: 1em; }
+
+.remindersContainer {
+  background-color: green;
+  height: 60px;
+  width: 25px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px 25px; }
+
+.homeButton {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  margin: 65% 0px 35% 45px; }
+
+.logOutButton {
+  padding: 10px 30px;
+  background-color: #EBEBE540;
+  border-radius: 6px;
+  border: 0px;
+  color: #EBEBE5;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  margin: auto 40px auto 0px; }
+
+.settingGearsButton {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: end;
+  align-self: center;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  margin-right: 25px; }
